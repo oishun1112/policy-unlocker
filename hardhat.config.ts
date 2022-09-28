@@ -31,22 +31,18 @@ const config: HardhatUserConfig = {
     hardhat: {
       initialBaseFeePerGas: 0,
       forking: {
-        url: process.env.GOERLI_URL!,
+        url: process.env.OPTIMISM_URL!,
         enabled: true,
       },
     },
     optimism: {
       url: process.env.OPTIMISM_URL,
-      accounts: process.env.PRODUCTION_KEY !== undefined ? [process.env.PRODUCTION_KEY] : [],
+      //accounts: process.env.PRODUCTION_KEY !== undefined ? [process.env.PRODUCTION_KEY] : [],
       gasPrice: 3e9, //3Gwei
     },
   },
-  gasReporter: {
-    enabled: process.env.REPORT_GAS !== undefined,
-    currency: "USD",
-  },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: process.env.OPT_ETHERSCAN_API,
   },
 };
 
