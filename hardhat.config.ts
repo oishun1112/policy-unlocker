@@ -37,8 +37,8 @@ const config: HardhatUserConfig = {
     },
     optimism: {
       url: process.env.OPTIMISM_URL,
-      //accounts: process.env.PRODUCTION_KEY !== undefined ? [process.env.PRODUCTION_KEY] : [],
-      gasPrice: 3e9, //3Gwei
+      accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
+      gasPrice: 1e7, //0.01Gwei
     },
   },
   etherscan: {
