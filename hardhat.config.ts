@@ -40,9 +40,18 @@ const config: HardhatUserConfig = {
       accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
       gasPrice: 1e7, //0.01Gwei
     },
+    goerli: {
+      url: process.env.GOERLI_URL,
+      accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
+      gasPrice: 3e9, //3Gwei
+    },
   },
   etherscan: {
-    apiKey: process.env.OPT_ETHERSCAN_API,
+    apiKey: {
+      goerli: process.env.ETHERSCAN_API!,
+      optimisticKovan: process.env.OPT_ETHERSCAN_API!,
+      optimisticEthereum: process.env.OPT_ETHERSCAN_API!,
+    },
   },
 };
 

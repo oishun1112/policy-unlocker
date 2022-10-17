@@ -295,17 +295,17 @@
   },
   "ast": {
     "absolutePath": "contracts/interfaces/IMarket.sol",
-    "id": 295,
+    "id": 449,
     "exportedSymbols": {
       "IMarket": [
-        294
+        448
       ]
     },
     "nodeType": "SourceUnit",
     "src": "0:911:1",
     "nodes": [
       {
-        "id": 243,
+        "id": 397,
         "nodeType": "PragmaDirective",
         "src": "0:23:1",
         "literals": [
@@ -315,25 +315,25 @@
         ]
       },
       {
-        "id": 294,
+        "id": 448,
         "nodeType": "ContractDefinition",
         "src": "25:885:1",
         "nodes": [
           {
-            "id": 246,
+            "id": 400,
             "nodeType": "EnumDefinition",
             "src": "49:60:1",
             "canonicalName": "IMarket.MarketStatus",
             "members": [
               {
-                "id": 244,
+                "id": 398,
                 "name": "Trading",
                 "nameLocation": "77:7:1",
                 "nodeType": "EnumValue",
                 "src": "77:7:1"
               },
               {
-                "id": 245,
+                "id": 399,
                 "name": "Payingout",
                 "nameLocation": "94:9:1",
                 "nodeType": "EnumValue",
@@ -344,19 +344,19 @@
             "nameLocation": "54:12:1"
           },
           {
-            "id": 263,
+            "id": 417,
             "nodeType": "StructDefinition",
             "src": "114:479:1",
             "canonicalName": "IMarket.Insurance",
             "members": [
               {
                 "constant": false,
-                "id": 248,
+                "id": 402,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "149:2:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "141:10:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -365,7 +365,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 247,
+                  "id": 401,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "141:7:1",
@@ -378,12 +378,12 @@
               },
               {
                 "constant": false,
-                "id": 250,
+                "id": 404,
                 "mutability": "mutable",
                 "name": "startTime",
                 "nameLocation": "201:9:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "194:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -392,7 +392,7 @@
                   "typeString": "uint48"
                 },
                 "typeName": {
-                  "id": 249,
+                  "id": 403,
                   "name": "uint48",
                   "nodeType": "ElementaryTypeName",
                   "src": "194:6:1",
@@ -405,12 +405,12 @@
               },
               {
                 "constant": false,
-                "id": 252,
+                "id": 406,
                 "mutability": "mutable",
                 "name": "endTime",
                 "nameLocation": "252:7:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "245:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -419,7 +419,7 @@
                   "typeString": "uint48"
                 },
                 "typeName": {
-                  "id": 251,
+                  "id": 405,
                   "name": "uint48",
                   "nodeType": "ElementaryTypeName",
                   "src": "245:6:1",
@@ -432,12 +432,12 @@
               },
               {
                 "constant": false,
-                "id": 254,
+                "id": 408,
                 "mutability": "mutable",
                 "name": "amount",
                 "nameLocation": "300:6:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "292:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -446,7 +446,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 253,
+                  "id": 407,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "292:7:1",
@@ -459,12 +459,12 @@
               },
               {
                 "constant": false,
-                "id": 256,
+                "id": 410,
                 "mutability": "mutable",
                 "name": "target",
                 "nameLocation": "341:6:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "333:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -473,7 +473,7 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 255,
+                  "id": 409,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
                   "src": "333:7:1",
@@ -486,12 +486,12 @@
               },
               {
                 "constant": false,
-                "id": 258,
+                "id": 412,
                 "mutability": "mutable",
                 "name": "insured",
                 "nameLocation": "388:7:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "380:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -500,7 +500,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 257,
+                  "id": 411,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "380:7:1",
@@ -514,12 +514,12 @@
               },
               {
                 "constant": false,
-                "id": 260,
+                "id": 414,
                 "mutability": "mutable",
                 "name": "agent",
                 "nameLocation": "458:5:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "450:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -528,7 +528,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 259,
+                  "id": 413,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "450:7:1",
@@ -542,12 +542,12 @@
               },
               {
                 "constant": false,
-                "id": 262,
+                "id": 416,
                 "mutability": "mutable",
                 "name": "status",
                 "nameLocation": "533:6:1",
                 "nodeType": "VariableDeclaration",
-                "scope": 263,
+                "scope": 417,
                 "src": "528:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -556,7 +556,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 261,
+                  "id": 415,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "528:4:1",
@@ -570,11 +570,11 @@
             ],
             "name": "Insurance",
             "nameLocation": "121:9:1",
-            "scope": 294,
+            "scope": 448,
             "visibility": "public"
           },
           {
-            "id": 269,
+            "id": 423,
             "nodeType": "FunctionDefinition",
             "src": "599:61:1",
             "functionSelector": "e0e081d7",
@@ -584,47 +584,47 @@
             "name": "marketStatus",
             "nameLocation": "608:12:1",
             "parameters": {
-              "id": 264,
+              "id": 418,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "620:2:1"
             },
             "returnParameters": {
-              "id": 268,
+              "id": 422,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 267,
+                  "id": 421,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 269,
+                  "scope": 423,
                   "src": "646:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_MarketStatus_$246",
+                    "typeIdentifier": "t_enum$_MarketStatus_$400",
                     "typeString": "enum IMarket.MarketStatus"
                   },
                   "typeName": {
-                    "id": 266,
+                    "id": 420,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 265,
+                      "id": 419,
                       "name": "MarketStatus",
                       "nameLocations": [
                         "646:12:1"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 246,
+                      "referencedDeclaration": 400,
                       "src": "646:12:1"
                     },
-                    "referencedDeclaration": 246,
+                    "referencedDeclaration": 400,
                     "src": "646:12:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_MarketStatus_$246",
+                      "typeIdentifier": "t_enum$_MarketStatus_$400",
                       "typeString": "enum IMarket.MarketStatus"
                     }
                   },
@@ -633,13 +633,13 @@
               ],
               "src": "645:14:1"
             },
-            "scope": 294,
+            "scope": 448,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 274,
+            "id": 428,
             "nodeType": "FunctionDefinition",
             "src": "666:61:1",
             "functionSelector": "9d4c6d91",
@@ -649,23 +649,23 @@
             "name": "allInsuranceCount",
             "nameLocation": "675:17:1",
             "parameters": {
-              "id": 270,
+              "id": 424,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "692:2:1"
             },
             "returnParameters": {
-              "id": 273,
+              "id": 427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 272,
+                  "id": 426,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 274,
+                  "scope": 428,
                   "src": "718:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -674,7 +674,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 271,
+                    "id": 425,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "718:7:1",
@@ -688,13 +688,13 @@
               ],
               "src": "717:9:1"
             },
-            "scope": 294,
+            "scope": 448,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 282,
+            "id": 436,
             "nodeType": "FunctionDefinition",
             "src": "733:70:1",
             "functionSelector": "59fb49f9",
@@ -704,17 +704,17 @@
             "name": "insurances",
             "nameLocation": "742:10:1",
             "parameters": {
-              "id": 277,
+              "id": 431,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 276,
+                  "id": 430,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 282,
+                  "scope": 436,
                   "src": "753:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -723,7 +723,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 275,
+                    "id": 429,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "753:7:1",
@@ -738,41 +738,41 @@
               "src": "752:9:1"
             },
             "returnParameters": {
-              "id": 281,
+              "id": 435,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 280,
+                  "id": 434,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 282,
+                  "scope": 436,
                   "src": "785:16:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Insurance_$263_memory_ptr",
+                    "typeIdentifier": "t_struct$_Insurance_$417_memory_ptr",
                     "typeString": "struct IMarket.Insurance"
                   },
                   "typeName": {
-                    "id": 279,
+                    "id": 433,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 278,
+                      "id": 432,
                       "name": "Insurance",
                       "nameLocations": [
                         "785:9:1"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 263,
+                      "referencedDeclaration": 417,
                       "src": "785:9:1"
                     },
-                    "referencedDeclaration": 263,
+                    "referencedDeclaration": 417,
                     "src": "785:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Insurance_$263_storage_ptr",
+                      "typeIdentifier": "t_struct$_Insurance_$417_storage_ptr",
                       "typeString": "struct IMarket.Insurance"
                     }
                   },
@@ -781,13 +781,13 @@
               ],
               "src": "784:18:1"
             },
-            "scope": 294,
+            "scope": 448,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 288,
+            "id": 442,
             "nodeType": "FunctionDefinition",
             "src": "809:55:1",
             "functionSelector": "9fe69800",
@@ -797,17 +797,17 @@
             "name": "unlockBatch",
             "nameLocation": "818:11:1",
             "parameters": {
-              "id": 286,
+              "id": 440,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 285,
+                  "id": 439,
                   "mutability": "mutable",
                   "name": "_ids",
                   "nameLocation": "849:4:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 288,
+                  "scope": 442,
                   "src": "830:23:1",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -817,7 +817,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 283,
+                      "id": 437,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "830:7:1",
@@ -826,7 +826,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 284,
+                    "id": 438,
                     "nodeType": "ArrayTypeName",
                     "src": "830:9:1",
                     "typeDescriptions": {
@@ -840,18 +840,18 @@
               "src": "829:25:1"
             },
             "returnParameters": {
-              "id": 287,
+              "id": 441,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "863:0:1"
             },
-            "scope": 294,
+            "scope": 448,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 293,
+            "id": 447,
             "nodeType": "FunctionDefinition",
             "src": "870:38:1",
             "functionSelector": "6198e339",
@@ -861,17 +861,17 @@
             "name": "unlock",
             "nameLocation": "879:6:1",
             "parameters": {
-              "id": 291,
+              "id": 445,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 290,
+                  "id": 444,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "894:3:1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 293,
+                  "scope": 447,
                   "src": "886:11:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -880,7 +880,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 289,
+                    "id": 443,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "886:7:1",
@@ -895,12 +895,12 @@
               "src": "885:13:1"
             },
             "returnParameters": {
-              "id": 292,
+              "id": 446,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "907:0:1"
             },
-            "scope": 294,
+            "scope": 448,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -913,11 +913,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          294
+          448
         ],
         "name": "IMarket",
         "nameLocation": "35:7:1",
-        "scope": 295,
+        "scope": 449,
         "usedErrors": []
       }
     ]

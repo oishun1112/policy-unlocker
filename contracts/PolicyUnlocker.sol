@@ -47,6 +47,17 @@ contract PolicyUnlocker {
         }
     }
 
+    function manualExecute() external {
+        (
+            address _market,
+            uint256[] memory _ids
+        ) = _getFirstUnlockablePoolAndIds();
+
+        if (_ids.length != 0) {
+            IMarket(_market).unlockBatch(_ids);
+        }
+    }
+
     function _getFirstUnlockablePoolAndIds()
         internal
         view

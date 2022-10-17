@@ -93,17 +93,17 @@
   },
   "ast": {
     "absolutePath": "contracts/interfaces/IRegistry.sol",
-    "id": 314,
+    "id": 468,
     "exportedSymbols": {
       "IRegistry": [
-        313
+        467
       ]
     },
     "nodeType": "SourceUnit",
     "src": "0:120:3",
     "nodes": [
       {
-        "id": 306,
+        "id": 460,
         "nodeType": "PragmaDirective",
         "src": "0:23:3",
         "literals": [
@@ -113,12 +113,12 @@
         ]
       },
       {
-        "id": 313,
+        "id": 467,
         "nodeType": "ContractDefinition",
         "src": "25:94:3",
         "nodes": [
           {
-            "id": 312,
+            "id": 466,
             "nodeType": "FunctionDefinition",
             "src": "51:66:3",
             "functionSelector": "b0772d0b",
@@ -128,23 +128,23 @@
             "name": "getAllMarkets",
             "nameLocation": "60:13:3",
             "parameters": {
-              "id": 307,
+              "id": 461,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "73:2:3"
             },
             "returnParameters": {
-              "id": 311,
+              "id": 465,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 310,
+                  "id": 464,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 312,
+                  "scope": 466,
                   "src": "99:16:3",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -154,7 +154,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 308,
+                      "id": 462,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "99:7:3",
@@ -164,7 +164,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 309,
+                    "id": 463,
                     "nodeType": "ArrayTypeName",
                     "src": "99:9:3",
                     "typeDescriptions": {
@@ -177,7 +177,7 @@
               ],
               "src": "98:18:3"
             },
-            "scope": 313,
+            "scope": 467,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -190,11 +190,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          313
+          467
         ],
         "name": "IRegistry",
         "nameLocation": "35:9:3",
-        "scope": 314,
+        "scope": 468,
         "usedErrors": []
       }
     ]
