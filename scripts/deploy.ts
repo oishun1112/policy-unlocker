@@ -8,8 +8,8 @@ async function main() {
   let PolicyUnlocker: ContractFactory;
   let unlocker: Contract;
 
-  const Registry = "0x0fa85C39c96A9172CcCa7F84CE68E08A2BB971C1";
-  const Parameters = "0x3956fEaEF1821bE55B66eBB707B4aBcefD84c0A2";
+  const Registry = "0x636938b5fF717F525C696F8961B9A1AEC38749A1";
+  const Parameters = "0x5e204BF6eF5CD2594DfEb131608a8770d6A1a907";
 
   //import
   [creator] = await ethers.getSigners();

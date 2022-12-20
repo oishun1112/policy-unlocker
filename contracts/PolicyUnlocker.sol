@@ -14,9 +14,10 @@ contract PolicyUnlocker {
         param = IParameters(_parameter);
     }
 
-    function unlockBatch(address _targetMarket, uint256[] memory _ids)
-        external
-    {
+    function unlockBatch(
+        address _targetMarket,
+        uint256[] memory _ids
+    ) external {
         IMarket _market = IMarket(_targetMarket);
 
         _market.unlockBatch(_ids);
@@ -84,20 +85,18 @@ contract PolicyUnlocker {
     }
 
     function _getAllMarkets() internal view returns (address[] memory) {
-        return registry.getAllMarkets();
+        return registry.getAllPools();
     }
 
-    function _getAllUnlockableIds(IMarket _market)
-        internal
-        view
-        returns (uint256[] memory)
-    {
+    function _getAllUnlockableIds(
+        IMarket _market
+    ) internal view returns (uint256[] memory) {
         if (
             _isMarket(_market) &&
             _market.marketStatus() == IMarket.MarketStatus.Trading
         ) {
             uint256 _idCounts = _market.allInsuranceCount();
-            uint256 _gracePeriod = param.getGrace(address(_market));
+            uint256 _gracePeriod = param.getUnlockGracePeriod(address(_market));
 
             uint256[] memory _draftUnlockableIds = new uint256[](_idCounts);
             uint256 _nextSlot;
@@ -150,11 +149,9 @@ contract PolicyUnlocker {
         return _getAllMarkets();
     }
 
-    function getAllUnlockableIds(IMarket _market)
-        external
-        view
-        returns (uint256[] memory _unlockableIds)
-    {
+    function getAllUnlockableIds(
+        IMarket _market
+    ) external view returns (uint256[] memory _unlockableIds) {
         return _getAllUnlockableIds(_market);
     }
 }
