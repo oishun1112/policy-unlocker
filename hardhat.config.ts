@@ -40,10 +40,19 @@ const config: HardhatUserConfig = {
       accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
       gasPrice: 1e7, //0.01Gwei
     },
+    arbitrum: {
+      url: process.env.ARBITRUM_URL,
+      accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
+    },
     goerli: {
       url: process.env.GOERLI_URL,
       accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
       gasPrice: 3e9, //3Gwei
+    },
+    astar: {
+      url: process.env.ASTAR_URL,
+      accounts: process.env.DEPLOYER_KEY !== undefined ? [process.env.DEPLOYER_KEY] : [],
+      gasPrice: 1e9, //1Gwei
     },
   },
   etherscan: {
@@ -51,6 +60,7 @@ const config: HardhatUserConfig = {
       goerli: process.env.ETHERSCAN_API!,
       optimisticKovan: process.env.OPT_ETHERSCAN_API!,
       optimisticEthereum: process.env.OPT_ETHERSCAN_API!,
+      arbitrumOne: process.env.ARBITRUM_ETHERSCAN_API!,
     },
   },
 };
